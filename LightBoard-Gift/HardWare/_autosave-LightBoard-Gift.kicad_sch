@@ -1526,7 +1526,10 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Switch:CK_KMS2xxGP"
+		(symbol "Switch:SW_Push"
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -1535,7 +1538,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "SW"
-				(at 4.318 2.032 0)
+				(at 1.27 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1543,15 +1546,15 @@
 					(justify left)
 				)
 			)
-			(property "Value" "CK_KMS2xxGP"
-				(at 0 4.572 0)
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "Button_Switch_SMD:SW_SPST_CK_KMS2xxGP"
+			(property "Footprint" ""
 				(at 0 5.08 0)
 				(effects
 					(font
@@ -1560,7 +1563,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.ckswitches.com/media/1482/kms.pdf"
+			(property "Datasheet" "~"
 				(at 0 5.08 0)
 				(effects
 					(font
@@ -1569,7 +1572,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Microminiature SMT Side Actuated, 4.2 x 2.8 x 1.42mm, with pegs, with shield pin"
+			(property "Description" "Push button switch, generic, two pins"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1587,16 +1590,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "*SW*KMS2*GP*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "CK_KMS2xxGP_0_1"
+			(symbol "SW_Push_0_1"
 				(circle
 					(center -2.032 0)
 					(radius 0.508)
@@ -1614,30 +1608,6 @@
 					)
 					(stroke
 						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.508 2.54) (xy 3.048 2.54) (xy 3.048 -1.143) (xy -3.048 -1.143) (xy -3.048 2.54) (xy -0.508 2.54)
-					)
-					(stroke
-						(width -0.0254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.508 2.54) (xy 3.048 2.54) (xy 3.048 -1.143) (xy -3.048 -1.143) (xy -3.048 2.54) (xy -0.508 2.54)
-					)
-					(stroke
-						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -1696,37 +1666,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "CK_KMS2xxGP_1_1"
-				(rectangle
-					(start -3.048 2.54)
-					(end 3.048 -1.27)
-					(stroke
-						(width -0.0254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "SH"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1839,41 +1778,25 @@
 			(embedded_fonts no)
 		)
 	)
-	(junction
-		(at 173.99 48.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6e828ce2-9f88-42f4-b644-a4231db1ffa7")
-	)
 	(wire
 		(pts
-			(xy 161.29 44.45) (xy 163.83 44.45)
+			(xy 175.26 44.45) (xy 177.8 44.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0b66434f-837f-4e8e-ba1c-9a53b33a7d0f")
+		(uuid "4a4034aa-e9c8-448d-a98b-a8bdac1b27b9")
 	)
 	(wire
 		(pts
-			(xy 173.99 44.45) (xy 173.99 48.26)
+			(xy 161.29 44.45) (xy 165.1 44.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2c0db541-5ed8-4e29-9fd9-8bc28846e693")
-	)
-	(wire
-		(pts
-			(xy 168.91 48.26) (xy 173.99 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5092e5eb-f24c-4a51-a76a-f5b0f6df4f4b")
+		(uuid "adc9f32c-4f68-43b2-a741-30cdc030467e")
 	)
 	(global_label "RED0"
 		(shape input)
@@ -2317,6 +2240,73 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 177.8 44.45 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "013afc30-6ada-4aca-94c3-79efde66018f")
+		(property "Reference" "#PWR012"
+			(at 184.15 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 181.61 44.4499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 177.8 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 177.8 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "36e2bcbc-17ad-49ee-a309-9a4008c0eeb2")
+		)
+		(instances
+			(project "LightBoard-Gift"
+				(path "/ee4ea1cd-56bb-4e48-b71d-bdae100177cd"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 21.59 97.79 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2383,25 +2373,25 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:CK_KMS2xxGP")
-		(at 168.91 44.45 0)
+		(lib_id "Switch:SW_Push")
+		(at 170.18 44.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "1f44d547-cd1f-4ce0-b086-50a3daa6bc45")
+		(uuid "19b643fd-7652-4ff2-9f4d-77fbc685ffc0")
 		(property "Reference" "SW1"
-			(at 168.91 36.83 0)
+			(at 170.18 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "CK_KMS2xxGP"
-			(at 168.91 39.37 0)
+		(property "Value" "SW_Push"
+			(at 170.18 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2409,7 +2399,7 @@
 			)
 		)
 		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2"
-			(at 168.91 39.37 0)
+			(at 170.18 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2417,8 +2407,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ckswitches.com/media/1482/kms.pdf"
-			(at 168.91 39.37 0)
+		(property "Datasheet" "~"
+			(at 170.18 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2426,23 +2416,20 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Microminiature SMT Side Actuated, 4.2 x 2.8 x 1.42mm, with pegs, with shield pin"
-			(at 168.91 44.45 0)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 170.18 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "SH"
-			(uuid "f0b747bc-d3b4-4331-a78e-0208abf5fbcb")
 		)
 		(pin "2"
-			(uuid "1cc82f93-ae63-470c-a049-34620bdb8765")
+			(uuid "0e70acf8-49d3-4763-a17a-047d1df92bd5")
 		)
 		(pin "1"
-			(uuid "7d14f38b-fa50-4b04-9d6e-4a8e67d8392c")
+			(uuid "dc7e351d-8469-4ba7-a79b-3c5683509fac")
 		)
 		(instances
 			(project ""
@@ -2522,72 +2509,6 @@
 			(project "LightBoard-Gift"
 				(path "/ee4ea1cd-56bb-4e48-b71d-bdae100177cd"
 					(reference "D5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 173.99 48.26 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3ef8ba5c-cd1e-4eaf-a166-f5b9297e46f0")
-		(property "Reference" "#PWR012"
-			(at 173.99 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 173.99 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 173.99 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 173.99 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 173.99 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9933550e-2695-45a6-b086-efe1dbd7f45b")
-		)
-		(instances
-			(project "LightBoard-Gift"
-				(path "/ee4ea1cd-56bb-4e48-b71d-bdae100177cd"
-					(reference "#PWR012")
 					(unit 1)
 				)
 			)
