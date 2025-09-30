@@ -42,7 +42,7 @@ led10.freq(1000)
 # Set up button with internal pull-up resistor
 button = Pin(BUTTON, Pin.IN, Pin.PULL_UP)
 
-# Mode variable: 0 = solid, 1 = flashing
+# Mode variable: 0 = solid, 1 = flashing, 2 = chase
 mode = 0
 last_button_state = 1
 debounce_time = 0
@@ -55,61 +55,84 @@ def check_button():
     # Button pressed (goes LOW when pressed with pull-up)
     if current_state == 0 and last_button_state == 1:
         if time.ticks_diff(current_time, debounce_time) > 200:  # 200ms debounce
-            mode = 1 - mode  # Toggle between 0 and 1
+            mode = (mode+1)%3  # Toggle between 0 and 2
             debounce_time = current_time
-            print(f"Mode: {'Flashing' if mode == 1 else 'Solid'}")
+            mode_names = ['Solid', 'Flashing', 'Chase']
+            print(f"Mode: {mode_names[mode]}")
     
     last_button_state = current_state
 
-def solid_mode():
-    led1.duty_u16(65535)
-    led2.duty_u16(65535)
-    led3.duty_u16(65535)
-    led4.duty_u16(65535)
-    led5.duty_u16(65535)
-    led6.duty_u16(65535)
-    led7.duty_u16(65535)
-    led8.duty_u16(65535)
-    led9.duty_u16(65535)
-    led10.duty_u16(65535)
-    time.sleep(0.05)
+class States:
+    @staticmethod
+    def solid_mode():
+        led1.duty_u16(65535)
+        led2.duty_u16(65535)
+        led3.duty_u16(65535)
+        led4.duty_u16(65535)
+        led5.duty_u16(65535)
+        led6.duty_u16(65535)
+        led7.duty_u16(65535)
+        led8.duty_u16(65535)
+        led9.duty_u16(65535)
+        led10.duty_u16(65535)
+        time.sleep(0.05)
 
-def flashing_mode():
-    # Fade in
-    for duty in range(0, 65536, 512):
-        led1.duty_u16(duty)
-        led2.duty_u16(65535-duty)
-        led3.duty_u16(duty)
-        led4.duty_u16(65535-duty)
-        led5.duty_u16(duty)
-        led6.duty_u16(65535-duty)
-        led7.duty_u16(duty)
-        led8.duty_u16(65535-duty)
-        led9.duty_u16(duty)
-        led10.duty_u16(65535-duty)
+    @staticmethod
+    def flashing_mode():
+        # Fade in
+        for duty in range(0, 65536, 512):
+            led1.duty_u16(duty)
+            led2.duty_u16(65535-duty)
+            led3.duty_u16(duty)
+            led4.duty_u16(65535-duty)
+            led5.duty_u16(duty)
+            led6.duty_u16(65535-duty)
+            led7.duty_u16(duty)
+            led8.duty_u16(65535-duty)
+            led9.duty_u16(duty)
+            led10.duty_u16(65535-duty)
 
-        time.sleep(0.01)
-        check_button()
-        if mode == 0:  # Mode changed, exit
-            return
-    
-    # Fade out
-    for duty in range(65535, -1, -512):
-        led1.duty_u16(duty)
-        led2.duty_u16(65535-duty)
-        led3.duty_u16(duty)
-        led4.duty_u16(65535-duty)
-        led5.duty_u16(duty)
-        led6.duty_u16(65535-duty)
-        led7.duty_u16(duty)
-        led8.duty_u16(65535-duty)
-        led9.duty_u16(duty)
-        led10.duty_u16(65535-duty)
+            time.sleep(0.01)
+            check_button()
+            if mode != 1:  # Mode changed, exit
+                return
+        
+        # Fade out
+        for duty in range(65535, -1, -512):
+            led1.duty_u16(duty)
+            led2.duty_u16(65535-duty)
+            led3.duty_u16(duty)
+            led4.duty_u16(65535-duty)
+            led5.duty_u16(duty)
+            led6.duty_u16(65535-duty)
+            led7.duty_u16(duty)
+            led8.duty_u16(65535-duty)
+            led9.duty_u16(duty)
+            led10.duty_u16(65535-duty)
 
-        time.sleep(0.01)
-        check_button()
-        if mode == 0:  # Mode changed, exit
-            return
+            time.sleep(0.01)
+            check_button()
+            if mode != 1:  # Mode changed, exit
+                return
+
+    @staticmethod    
+    def chase_mode():
+        leds = [led1, led2, led3, led4, led5, led6, led7, led8, led9, led10]
+        
+        while True:
+            for i in range(len(leds)):
+                # Turn off all LEDs
+                for led in leds:
+                    led.duty_u16(0)
+                
+                # Turn on current LED
+                leds[i].duty_u16(65535)
+                
+                time.sleep(0.1)
+                check_button()
+                if mode != 2:
+                    return
+
 
 # Main loop
 try:
@@ -118,9 +141,11 @@ try:
         check_button()
         
         if mode == 0:
-            solid_mode()
+            States.solid_mode()
+        elif mode == 1:
+            States.flashing_mode()
         else:
-            flashing_mode()
+            States.chase_mode()
             
 except KeyboardInterrupt:
     # Clean up on exit
