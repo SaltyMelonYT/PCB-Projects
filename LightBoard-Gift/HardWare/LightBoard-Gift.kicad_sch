@@ -508,6 +508,131 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:R_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+				)
+			)
+			(property "Value" "R_Small"
+				(at 1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Small_0_1"
+				(rectangle
+					(start -0.762 1.778)
+					(end 0.762 -1.778)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "MCU_Module:RaspberryPi_Pico"
 			(pin_names
 				(offset 0.762)
@@ -1526,6 +1651,89 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Switch:SW_Push"
 			(pin_numbers
 				(hide yes)
@@ -1780,7 +1988,97 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 44.45) (xy 177.8 44.45)
+			(xy 31.75 46.99) (xy 34.29 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02a25473-c225-455c-be1f-c19023d838b1")
+	)
+	(wire
+		(pts
+			(xy 72.39 161.29) (xy 74.93 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ca5d73b-b81a-473f-b659-374c566b92fe")
+	)
+	(wire
+		(pts
+			(xy 31.75 92.71) (xy 34.29 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ded0fa7-63eb-4eb4-84c2-387472c69f38")
+	)
+	(wire
+		(pts
+			(xy 31.75 184.15) (xy 34.29 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b09ce70-7ca9-49d4-8143-ec8ea7c1d1db")
+	)
+	(wire
+		(pts
+			(xy 31.75 115.57) (xy 34.29 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "204eff01-8949-49cf-afdb-c9e9a561d73e")
+	)
+	(wire
+		(pts
+			(xy 39.37 115.57) (xy 41.91 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29e9f54d-6f0e-4097-b77a-98ca32268b33")
+	)
+	(wire
+		(pts
+			(xy 31.75 69.85) (xy 34.29 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c893b2a-76f6-4580-992e-c8e012f0d8d9")
+	)
+	(wire
+		(pts
+			(xy 39.37 46.99) (xy 41.91 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33e92cdb-38e0-4478-957d-d6d3ed786293")
+	)
+	(wire
+		(pts
+			(xy 31.75 161.29) (xy 34.29 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33f21fbc-1f1c-4a5c-937a-93f719dae7d7")
+	)
+	(wire
+		(pts
+			(xy 93.98 26.67) (xy 96.52 26.67)
 		)
 		(stroke
 			(width 0)
@@ -1790,7 +2088,87 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 44.45) (xy 165.1 44.45)
+			(xy 72.39 184.15) (xy 74.93 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "611086f9-0765-4e95-b9f2-079d8e7c2172")
+	)
+	(wire
+		(pts
+			(xy 31.75 21.59) (xy 34.29 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6156f64f-ceff-4114-9e24-89cbe4f5c3a2")
+	)
+	(wire
+		(pts
+			(xy 39.37 92.71) (xy 41.91 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ea64178-fc68-49fa-adf6-e2e711b04e1a")
+	)
+	(wire
+		(pts
+			(xy 39.37 21.59) (xy 41.91 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7529b54b-5554-489d-a588-3dd534e030d2")
+	)
+	(wire
+		(pts
+			(xy 39.37 184.15) (xy 41.91 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a6af70c-1235-476c-b725-e491109f5d56")
+	)
+	(wire
+		(pts
+			(xy 39.37 69.85) (xy 41.91 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b7c3c44-7fff-4775-9669-1fb7c8ed6d91")
+	)
+	(wire
+		(pts
+			(xy 93.98 36.83) (xy 96.52 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4128aa4-a923-432f-81e6-f6f71e1f3f97")
+	)
+	(wire
+		(pts
+			(xy 31.75 138.43) (xy 34.29 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab0e06a7-3392-4547-a824-274447b95868")
+	)
+	(wire
+		(pts
+			(xy 115.57 26.67) (xy 106.68 26.67)
 		)
 		(stroke
 			(width 0)
@@ -1798,9 +2176,59 @@
 		)
 		(uuid "adc9f32c-4f68-43b2-a741-30cdc030467e")
 	)
+	(wire
+		(pts
+			(xy 39.37 138.43) (xy 41.91 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8c7c44b-9136-4abf-ab11-26a730bca069")
+	)
+	(wire
+		(pts
+			(xy 64.77 184.15) (xy 67.31 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd66b60b-8ffd-4c22-9e5e-4b1beb47e827")
+	)
+	(wire
+		(pts
+			(xy 39.37 161.29) (xy 41.91 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da503706-42fd-45c1-8317-653c23515b1c")
+	)
+	(wire
+		(pts
+			(xy 106.68 36.83) (xy 115.57 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfbb54fa-c93c-4d05-a2b4-6de14d5f23f6")
+	)
+	(wire
+		(pts
+			(xy 64.77 161.29) (xy 67.31 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f995c2a0-3ce0-4a2c-b63b-3f08afb08bd8")
+	)
 	(global_label "RED0"
 		(shape input)
-		(at 31.75 21.59 0)
+		(at 41.91 21.59 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1810,7 +2238,7 @@
 		)
 		(uuid "0c8ea754-f5d6-4d4f-93ae-5bf43da6b3d5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 39.6337 21.59 0)
+			(at 49.7937 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1822,7 +2250,7 @@
 	)
 	(global_label "RED8"
 		(shape input)
-		(at 54.61 184.15 0)
+		(at 74.93 184.15 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1832,7 +2260,7 @@
 		)
 		(uuid "1589f3a0-a313-422f-ab45-d21ac86407aa")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 62.4937 184.15 0)
+			(at 82.8137 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1844,29 +2272,29 @@
 	)
 	(global_label "RED4"
 		(shape input)
-		(at 115.57 36.83 180)
+		(at 161.29 31.75 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "2204e6a6-d411-4012-be48-0cc8e1a36d57")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.6863 36.83 0)
+			(at 169.1737 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
 	)
 	(global_label "RED3"
 		(shape input)
-		(at 31.75 92.71 0)
+		(at 41.91 92.71 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1876,7 +2304,7 @@
 		)
 		(uuid "28a9e679-6314-4208-90db-717c06449e4c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 39.6337 92.71 0)
+			(at 49.7937 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1888,7 +2316,7 @@
 	)
 	(global_label "RED6"
 		(shape input)
-		(at 31.75 161.29 0)
+		(at 41.91 161.29 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1898,7 +2326,7 @@
 		)
 		(uuid "356a2a8d-449c-4e27-9790-f0c3bbefdf22")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 39.6337 161.29 0)
+			(at 49.7937 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1910,7 +2338,7 @@
 	)
 	(global_label "RED8"
 		(shape input)
-		(at 115.57 46.99 180)
+		(at 115.57 62.23 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1920,7 +2348,7 @@
 		)
 		(uuid "3c6f675f-3630-4ac2-9ab1-91f5a70b03c6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.6863 46.99 0)
+			(at 107.6863 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1932,7 +2360,7 @@
 	)
 	(global_label "RED9"
 		(shape input)
-		(at 54.61 161.29 0)
+		(at 74.93 161.29 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1942,7 +2370,7 @@
 		)
 		(uuid "440ab9e7-cf64-4a5a-994b-6af4f05db590")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 62.4937 161.29 0)
+			(at 82.8137 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1954,7 +2382,7 @@
 	)
 	(global_label "RED1"
 		(shape input)
-		(at 31.75 46.99 0)
+		(at 41.91 46.99 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1964,7 +2392,7 @@
 		)
 		(uuid "49277eea-6072-47ef-85cb-888913956dfc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 39.6337 46.99 0)
+			(at 49.7937 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1976,7 +2404,7 @@
 	)
 	(global_label "RED4"
 		(shape input)
-		(at 31.75 115.57 0)
+		(at 41.91 115.57 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1986,7 +2414,7 @@
 		)
 		(uuid "4caa0770-07e3-41bc-8785-5ce61935e1cc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 39.6337 115.57 0)
+			(at 49.7937 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1998,73 +2426,73 @@
 	)
 	(global_label "RED2"
 		(shape input)
-		(at 115.57 31.75 180)
+		(at 161.29 36.83 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "4d0224d1-d77b-4670-b223-d7628dc0c82a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.6863 31.75 0)
+			(at 169.1737 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
 	)
 	(global_label "RED1"
 		(shape input)
-		(at 115.57 29.21 180)
+		(at 161.29 39.37 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "5c16ac76-7204-44bc-938f-b6370aa17da4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.6863 29.21 0)
+			(at 169.1737 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
 	)
 	(global_label "RED0"
 		(shape input)
-		(at 115.57 26.67 180)
+		(at 161.29 41.91 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "6080fb89-a892-4c1b-97e6-7dc33e2cd5c8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.6863 26.67 0)
+			(at 169.1737 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
 	)
 	(global_label "RED7"
 		(shape input)
-		(at 115.57 44.45 180)
+		(at 115.57 64.77 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2074,7 +2502,7 @@
 		)
 		(uuid "67a8c910-004e-492e-a922-e36db6f32224")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.6863 44.45 0)
+			(at 107.6863 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2086,7 +2514,7 @@
 	)
 	(global_label "RED7"
 		(shape input)
-		(at 31.75 184.15 0)
+		(at 41.91 184.15 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2096,7 +2524,7 @@
 		)
 		(uuid "83ba6dc0-dbde-44cf-ac56-8efbdb1f320f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 39.6337 184.15 0)
+			(at 49.7937 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2108,29 +2536,29 @@
 	)
 	(global_label "RED6"
 		(shape input)
-		(at 115.57 41.91 180)
+		(at 161.29 44.45 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "8fcead4f-0e6c-4094-8dda-ee8efaf160d9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.6863 41.91 0)
+			(at 169.1737 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
 	)
 	(global_label "RED2"
 		(shape input)
-		(at 31.75 69.85 0)
+		(at 41.91 69.85 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2140,7 +2568,7 @@
 		)
 		(uuid "949783d6-ad1c-4395-8480-ff3fcd6b5334")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 39.6337 69.85 0)
+			(at 49.7937 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2152,7 +2580,7 @@
 	)
 	(global_label "RED9"
 		(shape input)
-		(at 115.57 49.53 180)
+		(at 115.57 59.69 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2162,7 +2590,7 @@
 		)
 		(uuid "9613dbaf-d8a9-40a9-83a1-1ee8e74f5567")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.6863 49.53 0)
+			(at 107.6863 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2174,29 +2602,29 @@
 	)
 	(global_label "RED5"
 		(shape input)
-		(at 115.57 39.37 180)
+		(at 161.29 29.21 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "b0c7c665-038d-41c8-9fa3-568f9aa9bb2f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.6863 39.37 0)
+			(at 169.1737 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
 	)
 	(global_label "RED5"
 		(shape input)
-		(at 31.75 138.43 0)
+		(at 41.91 138.43 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2206,7 +2634,7 @@
 		)
 		(uuid "df6a7806-ad79-466c-b080-a916106eba76")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 39.6337 138.43 0)
+			(at 49.7937 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2218,29 +2646,29 @@
 	)
 	(global_label "RED3"
 		(shape input)
-		(at 115.57 34.29 180)
+		(at 161.29 34.29 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "f9271487-802e-401c-9f99-fe05cd5acc6d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.6863 34.29 0)
+			(at 169.1737 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 177.8 44.45 90)
+		(at 93.98 26.67 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2249,7 +2677,7 @@
 		(fields_autoplaced yes)
 		(uuid "013afc30-6ada-4aca-94c3-79efde66018f")
 		(property "Reference" "#PWR012"
-			(at 184.15 44.45 0)
+			(at 87.63 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2258,7 +2686,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 181.61 44.4499 90)
+			(at 90.17 26.6701 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2267,7 +2695,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 177.8 44.45 0)
+			(at 93.98 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2276,7 +2704,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 177.8 44.45 0)
+			(at 93.98 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2285,7 +2713,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 177.8 44.45 0)
+			(at 93.98 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2373,33 +2801,35 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 170.18 44.45 0)
+		(lib_id "Mechanical:MountingHole")
+		(at 67.31 39.37 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "19b643fd-7652-4ff2-9f4d-77fbc685ffc0")
-		(property "Reference" "SW1"
-			(at 170.18 36.83 0)
+		(uuid "16ddb91c-8dda-4582-a7ba-75b94ae518b1")
+		(property "Reference" "H4"
+			(at 69.85 38.0999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "SW_Push"
-			(at 170.18 39.37 0)
+		(property "Value" "MountingHole"
+			(at 69.85 40.6399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H4.3mm"
-			(at 170.18 39.37 0)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 67.31 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2408,7 +2838,69 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 170.18 39.37 0)
+			(at 67.31 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 67.31 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "LightBoard-Gift"
+				(path "/ee4ea1cd-56bb-4e48-b71d-bdae100177cd"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 101.6 26.67 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "19b643fd-7652-4ff2-9f4d-77fbc685ffc0")
+		(property "Reference" "SW1"
+			(at 101.6 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MODE_SELECT"
+			(at 101.6 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H4.3mm"
+			(at 101.6 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.6 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2417,7 +2909,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 170.18 44.45 0)
+			(at 101.6 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2435,6 +2927,210 @@
 			(project ""
 				(path "/ee4ea1cd-56bb-4e48-b71d-bdae100177cd"
 					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 101.6 36.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1cb202eb-59ab-4028-8804-0ac5974808f4")
+		(property "Reference" "SW2"
+			(at 101.6 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SWITCH"
+			(at 101.6 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_Slide_SPDT_Straight_CK_OS102011MS2Q"
+			(at 101.6 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.6 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 101.6 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2d12a140-099c-43a3-8d55-ce8669fd7417")
+		)
+		(pin "1"
+			(uuid "e2593e66-45d7-4860-90c6-424e8dba2b6b")
+		)
+		(instances
+			(project ""
+				(path "/ee4ea1cd-56bb-4e48-b71d-bdae100177cd"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 36.83 92.71 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "21e5c302-9255-428f-96d0-c5a3ae31e674")
+		(property "Reference" "R3"
+			(at 36.83 87.63 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "R_Small"
+			(at 36.83 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+			(at 36.83 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 36.83 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 36.83 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4c513cff-7ae7-4a2a-9f94-c4fc6b017134")
+		)
+		(pin "2"
+			(uuid "3956999b-d7f7-46f6-aee2-a88a2d4fc167")
+		)
+		(instances
+			(project "LightBoard-Gift"
+				(path "/ee4ea1cd-56bb-4e48-b71d-bdae100177cd"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 36.83 115.57 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "26397eac-369d-4b31-8ee1-04559aed1b17")
+		(property "Reference" "R4"
+			(at 36.83 110.49 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "560Ohm"
+			(at 36.83 113.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+			(at 36.83 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 36.83 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 36.83 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c7e0cf3c-228e-4e77-bfd6-bd917c9b4c00")
+		)
+		(pin "2"
+			(uuid "59abf255-44cd-4e54-81b4-1f9d122fd03f")
+		)
+		(instances
+			(project "LightBoard-Gift"
+				(path "/ee4ea1cd-56bb-4e48-b71d-bdae100177cd"
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -2657,7 +3353,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED_RKGB")
-		(at 49.53 189.23 0)
+		(at 59.69 189.23 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2666,7 +3362,7 @@
 		(fields_autoplaced yes)
 		(uuid "41a10226-03cd-43b3-8be2-3c9e08d8c41c")
 		(property "Reference" "D8"
-			(at 49.53 175.26 0)
+			(at 59.69 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2674,7 +3370,7 @@
 			)
 		)
 		(property "Value" "LED_RKGB"
-			(at 49.53 177.8 0)
+			(at 59.69 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2682,7 +3378,7 @@
 			)
 		)
 		(property "Footprint" "LED_THT:LED_D5.0mm-4_RGB"
-			(at 49.53 190.5 0)
+			(at 59.69 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2691,7 +3387,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 49.53 190.5 0)
+			(at 59.69 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2700,7 +3396,7 @@
 			)
 		)
 		(property "Description" "RGB LED, red/cathode/green/blue"
-			(at 49.53 189.23 0)
+			(at 59.69 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2731,7 +3427,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 44.45 189.23 270)
+		(at 54.61 189.23 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2740,7 +3436,7 @@
 		(fields_autoplaced yes)
 		(uuid "4c393b94-bdb1-4446-9add-663fd91e9654")
 		(property "Reference" "#PWR09"
-			(at 38.1 189.23 0)
+			(at 48.26 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2749,7 +3445,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 40.64 189.2299 90)
+			(at 50.8 189.2299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2758,7 +3454,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 44.45 189.23 0)
+			(at 54.61 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2767,7 +3463,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 44.45 189.23 0)
+			(at 54.61 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2776,7 +3472,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 44.45 189.23 0)
+			(at 54.61 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3012,6 +3708,142 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 36.83 21.59 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "55751931-3ec7-4627-a5ef-d08b87c6cbc1")
+		(property "Reference" "R0"
+			(at 36.83 16.51 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "560Ohm"
+			(at 36.83 19.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+			(at 36.83 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 36.83 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 36.83 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d3b1e7bd-0132-40ee-8d9d-f2cad9c439ca")
+		)
+		(pin "2"
+			(uuid "1d535c89-c71b-4ea8-9b62-b545e4eea9f9")
+		)
+		(instances
+			(project ""
+				(path "/ee4ea1cd-56bb-4e48-b71d-bdae100177cd"
+					(reference "R0")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 36.83 138.43 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5c0611d9-f986-4291-8c9d-d7d4c981c6ec")
+		(property "Reference" "R5"
+			(at 36.83 133.35 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "560Ohm"
+			(at 36.83 135.89 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+			(at 36.83 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 36.83 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 36.83 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3420912e-a7fa-470d-a267-7ea8e6568489")
+		)
+		(pin "2"
+			(uuid "a9185678-e80c-4628-b004-c7c86e5d547c")
+		)
+		(instances
+			(project "LightBoard-Gift"
+				(path "/ee4ea1cd-56bb-4e48-b71d-bdae100177cd"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED_RKGB")
 		(at 26.67 26.67 0)
 		(unit 1)
@@ -3087,7 +3919,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 44.45 166.37 270)
+		(at 54.61 166.37 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3096,7 +3928,7 @@
 		(fields_autoplaced yes)
 		(uuid "71988b51-4676-413b-a5ee-da9d2ddc1fd7")
 		(property "Reference" "#PWR010"
-			(at 38.1 166.37 0)
+			(at 48.26 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3105,7 +3937,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 40.64 166.3699 90)
+			(at 50.8 166.3699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3114,7 +3946,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 44.45 166.37 0)
+			(at 54.61 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3123,7 +3955,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 44.45 166.37 0)
+			(at 54.61 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3132,7 +3964,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 44.45 166.37 0)
+			(at 54.61 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3147,6 +3979,142 @@
 			(project "LightBoard-Gift"
 				(path "/ee4ea1cd-56bb-4e48-b71d-bdae100177cd"
 					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 36.83 184.15 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "827377b2-318a-4081-93e2-8b87415bd7a1")
+		(property "Reference" "R7"
+			(at 36.83 179.07 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "560Ohm"
+			(at 36.83 181.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+			(at 36.83 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 36.83 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 36.83 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "587128c6-bb2f-487e-bd33-d1df1348bb77")
+		)
+		(pin "2"
+			(uuid "e83ade0b-b22a-4485-a895-973ca160d18f")
+		)
+		(instances
+			(project "LightBoard-Gift"
+				(path "/ee4ea1cd-56bb-4e48-b71d-bdae100177cd"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 36.83 46.99 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8bec57e5-958d-4d8e-87c5-0357fd1dfb17")
+		(property "Reference" "R1"
+			(at 36.83 41.91 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "560Ohm"
+			(at 36.83 44.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+			(at 36.83 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 36.83 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 36.83 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "828f589d-111a-4b10-a6bb-686b55c54238")
+		)
+		(pin "2"
+			(uuid "34b8eb38-828d-4512-9721-e0792766387f")
+		)
+		(instances
+			(project "LightBoard-Gift"
+				(path "/ee4ea1cd-56bb-4e48-b71d-bdae100177cd"
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -3228,7 +4196,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED_RKGB")
-		(at 49.53 166.37 0)
+		(at 59.69 166.37 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3237,7 +4205,7 @@
 		(fields_autoplaced yes)
 		(uuid "95b5b46f-c853-4aa8-b99f-569dfdc83212")
 		(property "Reference" "D9"
-			(at 49.53 152.4 0)
+			(at 59.69 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3245,7 +4213,7 @@
 			)
 		)
 		(property "Value" "LED_RKGB"
-			(at 49.53 154.94 0)
+			(at 59.69 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3253,7 +4221,7 @@
 			)
 		)
 		(property "Footprint" "LED_THT:LED_D5.0mm-4_RGB"
-			(at 49.53 167.64 0)
+			(at 59.69 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3262,7 +4230,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 49.53 167.64 0)
+			(at 59.69 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3271,7 +4239,7 @@
 			)
 		)
 		(property "Description" "RGB LED, red/cathode/green/blue"
-			(at 49.53 166.37 0)
+			(at 59.69 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3295,6 +4263,74 @@
 			(project "LightBoard-Gift"
 				(path "/ee4ea1cd-56bb-4e48-b71d-bdae100177cd"
 					(reference "D9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 69.85 161.29 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9a16aff8-7458-4504-84f8-5203ebc31210")
+		(property "Reference" "R8"
+			(at 69.85 156.21 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "560Ohm"
+			(at 69.85 158.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+			(at 69.85 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 69.85 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "46c183a7-0983-477b-9e44-f57c0f2e90ea")
+		)
+		(pin "2"
+			(uuid "96e78f7e-e386-4db9-8453-5bdc903a45a6")
+		)
+		(instances
+			(project "LightBoard-Gift"
+				(path "/ee4ea1cd-56bb-4e48-b71d-bdae100177cd"
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -3552,6 +4588,206 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 36.83 69.85 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ad65ffe0-a7ba-453b-acb0-172aa4524fa4")
+		(property "Reference" "R2"
+			(at 36.83 64.77 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "560Ohm"
+			(at 36.83 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+			(at 36.83 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 36.83 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 36.83 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c22a1225-66e5-4a6c-87d5-baf4815000f2")
+		)
+		(pin "2"
+			(uuid "f04a1f7d-9f7c-479c-9b95-c7958de56432")
+		)
+		(instances
+			(project "LightBoard-Gift"
+				(path "/ee4ea1cd-56bb-4e48-b71d-bdae100177cd"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 67.31 33.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b0427395-dac9-4287-b13c-e79d6ee71c42")
+		(property "Reference" "H3"
+			(at 69.85 31.7499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 69.85 34.2899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 67.31 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 67.31 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 67.31 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "LightBoard-Gift"
+				(path "/ee4ea1cd-56bb-4e48-b71d-bdae100177cd"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 36.83 161.29 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bd05b1f0-15c4-4927-aa6a-2a7b42333c12")
+		(property "Reference" "R6"
+			(at 36.83 156.21 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "560Ohm"
+			(at 36.83 158.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+			(at 36.83 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 36.83 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 36.83 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a4f29881-5f30-4ce2-891f-6e11614d09e5")
+		)
+		(pin "2"
+			(uuid "82b90798-dc9c-4af8-8084-1c7a6069f04e")
+		)
+		(instances
+			(project "LightBoard-Gift"
+				(path "/ee4ea1cd-56bb-4e48-b71d-bdae100177cd"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 21.59 143.51 270)
 		(unit 1)
@@ -3680,6 +4916,70 @@
 			(project "LightBoard-Gift"
 				(path "/ee4ea1cd-56bb-4e48-b71d-bdae100177cd"
 					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 67.31 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "be25ab64-eaea-436d-9839-494d8355b0ed")
+		(property "Reference" "H1"
+			(at 69.85 19.0499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 69.85 21.5899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 67.31 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 67.31 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 67.31 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/ee4ea1cd-56bb-4e48-b71d-bdae100177cd"
+					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -3827,6 +5127,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 69.85 184.15 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cc90d7fb-ce1a-4163-8f12-79016b57b7ba")
+		(property "Reference" "R9"
+			(at 69.85 179.07 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "560Ohm"
+			(at 69.85 181.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+			(at 69.85 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 69.85 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "be591523-f185-4511-9818-550a68c29651")
+		)
+		(pin "2"
+			(uuid "edc712da-bc42-4b49-a4d9-6cc8e38fabce")
+		)
+		(instances
+			(project "LightBoard-Gift"
+				(path "/ee4ea1cd-56bb-4e48-b71d-bdae100177cd"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED_RKGB")
 		(at 26.67 189.23 0)
 		(unit 1)
@@ -3901,6 +5269,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 67.31 26.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e8aa76b7-4955-4837-8c0d-cc13f3f4c222")
+		(property "Reference" "H2"
+			(at 69.85 25.3999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 69.85 27.9399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 67.31 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 67.31 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 67.31 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "LightBoard-Gift"
+				(path "/ee4ea1cd-56bb-4e48-b71d-bdae100177cd"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 21.59 120.65 270)
 		(unit 1)
@@ -3962,6 +5394,73 @@
 			(project "LightBoard-Gift"
 				(path "/ee4ea1cd-56bb-4e48-b71d-bdae100177cd"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 93.98 36.83 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ef145756-bf39-47fa-91c1-7f16a6772072")
+		(property "Reference" "#PWR013"
+			(at 87.63 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 90.17 36.8301 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 93.98 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 93.98 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 93.98 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "de109d9f-0417-4a3e-86dc-1734e087f4e1")
+		)
+		(instances
+			(project "LightBoard-Gift"
+				(path "/ee4ea1cd-56bb-4e48-b71d-bdae100177cd"
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
