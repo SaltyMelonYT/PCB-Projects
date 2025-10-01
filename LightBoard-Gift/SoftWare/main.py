@@ -1,22 +1,20 @@
 from machine import Pin, PWM
 import time
 
-# Configure GPIO pins
 LED1 = 21
 LED2 = 20
 LED3 = 19
 LED4 = 18
 LED5 = 17
-LED6 = 2
-LED7 = 16
+LED6 = 16
+LED7 = 22
 LED8 = 15
 LED9 = 14
-LED10 = 14
+LED10 = 13
 
 SWITCH = 4
-BUTTON = 0  # Change to your button GPIO pin
+BUTTON = 0
 
-# Set up PWM for LEDs
 led1 = PWM(Pin(LED1))
 led2 = PWM(Pin(LED2))
 led3 = PWM(Pin(LED3))
@@ -39,28 +37,24 @@ led8.freq(1000)
 led9.freq(1000)
 led10.freq(1000)
 
-
-# Set up button with internal pull-up resistor
 button = Pin(BUTTON, Pin.IN, Pin.PULL_UP)
 switch = Pin(SWITCH, Pin.IN, Pin.PULL_UP)
 
-# Mode variable: 0 = solid, 1 = flashing, 2 = chase
 mode = 0
 last_button_state = 1
 debounce_time = 0
 
 def is_switch_on():
-    return switch.value() == 0  # or == 1, depending on your wiring
+    return switch.value() == 0
 
 def check_button():
     global mode, last_button_state, debounce_time
     current_state = button.value()
     current_time = time.ticks_ms()
     
-    # Button pressed (goes LOW when pressed with pull-up)
     if current_state == 0 and last_button_state == 1:
-        if time.ticks_diff(current_time, debounce_time) > 200:  # 200ms debounce
-            mode = (mode+1)%3  # Toggle between 0 and 2
+        if time.ticks_diff(current_time, debounce_time) > 200:
+            mode = (mode+1)%3
             debounce_time = current_time
             mode_names = ['Solid', 'Flashing', 'Chase']
             print(f"Mode: {mode_names[mode]}")
@@ -71,7 +65,7 @@ class States:
     @staticmethod
     def solid_mode():
         if not is_switch_on():
-            return  # Exit the mode if switch is off
+            return
         led1.duty_u16(65535)
         led2.duty_u16(65535)
         led3.duty_u16(65535)
@@ -87,8 +81,7 @@ class States:
     @staticmethod
     def flashing_mode():
         if not is_switch_on():
-            return  # Exit the mode if switch is off
-        # Fade in
+            return
         for duty in range(0, 65536, 512):
             led1.duty_u16(duty)
             led2.duty_u16(65535-duty)
@@ -103,10 +96,9 @@ class States:
 
             time.sleep(0.01)
             check_button()
-            if mode != 1:  # Mode changed, exit
+            if mode != 1:
                 return
         
-        # Fade out
         for duty in range(65535, -1, -512):
             led1.duty_u16(duty)
             led2.duty_u16(65535-duty)
@@ -121,7 +113,7 @@ class States:
 
             time.sleep(0.01)
             check_button()
-            if mode != 1:  # Mode changed, exit
+            if mode != 1:
                 return
 
     @staticmethod    
@@ -130,23 +122,18 @@ class States:
         
         while True:
             if not is_switch_on():
-                return  # Exit if switch is off
+                return
                 
             for i in range(len(leds)):
-                # Turn off all LEDs
                 for led in leds:
                     led.duty_u16(0)
-                
-                # Turn on current LED
+
                 leds[i].duty_u16(65535)
-                
                 time.sleep(0.1)
                 check_button()
                 if mode != 2:
                     return
 
-
-# Main loop
 try:
     print("Starting - Mode: Solid")
     while True:
@@ -160,7 +147,6 @@ try:
             States.chase_mode()
             
 except KeyboardInterrupt:
-    # Clean up on exit
     led1.duty_u16(0)
     led2.duty_u16(0)
     led3.duty_u16(0)
