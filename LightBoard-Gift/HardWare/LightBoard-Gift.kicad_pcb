@@ -10028,6 +10028,19 @@
 			(justify left bottom)
 		)
 	)
+	(gr_text "https://github.com/SaltyMelonYT"
+		(at 128 69.627395 75)
+		(layer "B.SilkS")
+		(uuid "835e34ad-2dea-4ead-ae2a-4a16d1b95675")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
 	(segment
 		(start 140.784 65.828664)
 		(end 140.784 71.3115)

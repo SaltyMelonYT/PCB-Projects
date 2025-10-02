@@ -45,7 +45,20 @@ last_button_state = 1
 debounce_time = 0
 
 def is_switch_on():
-    return switch.value() == 0
+    if switch.value() == 0:
+        return True
+    else:
+        led1.duty_u16(0)
+        led2.duty_u16(0)
+        led3.duty_u16(0)
+        led4.duty_u16(0)
+        led5.duty_u16(0)
+        led6.duty_u16(0)
+        led7.duty_u16(0)
+        led8.duty_u16(0)
+        led9.duty_u16(0)
+        led10.duty_u16(0)
+        return False
 
 def check_button():
     global mode, last_button_state, debounce_time
@@ -83,6 +96,8 @@ class States:
         if not is_switch_on():
             return
         for duty in range(0, 65536, 512):
+            if not is_switch_on():
+                return
             led1.duty_u16(duty)
             led2.duty_u16(65535-duty)
             led3.duty_u16(duty)
@@ -100,6 +115,8 @@ class States:
                 return
         
         for duty in range(65535, -1, -512):
+            if not is_switch_on():
+                return
             led1.duty_u16(duty)
             led2.duty_u16(65535-duty)
             led3.duty_u16(duty)
@@ -125,7 +142,11 @@ class States:
                 return
                 
             for i in range(len(leds)):
+                if not is_switch_on():
+                    return
                 for led in leds:
+                    if not is_switch_on():
+                        return
                     led.duty_u16(0)
 
                 leds[i].duty_u16(65535)
