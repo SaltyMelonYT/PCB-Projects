@@ -451,7 +451,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "LilyBday.kicad_pro",
+    "filename": "LightBoard-Gift.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -490,7 +490,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "../3d-Models/LightBoard-Gift.step",
       "svg": "",
       "vrml": ""
     },
