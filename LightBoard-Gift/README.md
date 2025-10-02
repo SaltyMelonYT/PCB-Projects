@@ -4,6 +4,8 @@ Tailored towards couples for any occasion, wheather it be Valentines day, Christ
 
 ## NEEDED HARDWARE
 
-* 1x Raspberry Pi Pico
-* ~12 Chazon 5mm RGB LEDs
+* One (1) Raspberry Pi Pico
+* Ten (10) Chazon 5mm RGB LEDs
 * Printed Circuit Board (PCB) from KiCad files
+* Ten (10) 560 Ohm 2515 Resistors (220 ohm will work fine, I just chose 560 because it was dimmer without software changes)
+* Soldering Iron and solder
