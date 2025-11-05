@@ -2824,7 +2824,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 99.06) (xy 152.4 99.06)
+			(xy 204.47 78.74) (xy 210.82 78.74)
 		)
 		(stroke
 			(width 0)
@@ -2874,7 +2874,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 99.06) (xy 139.7 99.06)
+			(xy 220.98 78.74) (xy 223.52 78.74)
 		)
 		(stroke
 			(width 0)
@@ -2934,7 +2934,7 @@
 	)
 	(global_label "RED0"
 		(shape input)
-		(at 44.45 71.12 0)
+		(at 49.53 71.12 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2944,7 +2944,7 @@
 		)
 		(uuid "03b07f38-ef32-4f35-81e6-2672084e598e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 52.3337 71.12 0)
+			(at 57.4137 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2956,51 +2956,51 @@
 	)
 	(global_label "RED2"
 		(shape input)
-		(at 204.47 73.66 0)
+		(at 158.75 71.12 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "0c2651ef-5cc3-41ee-a6e5-5e541730ac95")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 212.3537 73.66 0)
+			(at 150.8663 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
 	)
 	(global_label "RED6"
 		(shape input)
-		(at 204.47 63.5 0)
+		(at 158.75 81.28 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "0da22fb6-2e95-481d-a910-03262ac4803d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 212.3537 63.5 0)
+			(at 150.8663 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
 	)
 	(global_label "RED2"
 		(shape input)
-		(at 44.45 116.84 0)
+		(at 49.53 116.84 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3010,7 +3010,7 @@
 		)
 		(uuid "10e8866f-5da4-454c-a2ed-8a5e2ff98f4a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 52.3337 116.84 0)
+			(at 57.4137 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3022,29 +3022,29 @@
 	)
 	(global_label "RED4"
 		(shape input)
-		(at 204.47 68.58 0)
+		(at 158.75 76.2 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "1e21b050-ed3e-4cfa-a625-6f44d0cd48ed")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 212.3537 68.58 0)
+			(at 150.8663 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
 	)
 	(global_label "RED7"
 		(shape input)
-		(at 83.82 116.84 0)
+		(at 88.9 116.84 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3054,7 +3054,7 @@
 		)
 		(uuid "2a3187b1-13d7-468d-90f5-2a055dcfaba9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 91.7037 116.84 0)
+			(at 96.7837 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3066,29 +3066,29 @@
 	)
 	(global_label "RED3"
 		(shape input)
-		(at 204.47 71.12 0)
+		(at 158.75 73.66 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "2c4cf080-3f5d-4d38-b546-40d41c3034c5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 212.3537 71.12 0)
+			(at 150.8663 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
 	)
 	(global_label "RED4"
 		(shape input)
-		(at 44.45 162.56 0)
+		(at 49.53 162.56 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3098,7 +3098,7 @@
 		)
 		(uuid "5399da83-bac4-4d07-996b-3f1ef6f7f33d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 52.3337 162.56 0)
+			(at 57.4137 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3110,7 +3110,7 @@
 	)
 	(global_label "RED5"
 		(shape input)
-		(at 83.82 71.12 0)
+		(at 88.9 71.12 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3120,7 +3120,7 @@
 		)
 		(uuid "7be83875-139c-46ab-ad39-6d7de7076539")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 91.7037 71.12 0)
+			(at 96.7837 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3132,7 +3132,7 @@
 	)
 	(global_label "RED7"
 		(shape input)
-		(at 158.75 66.04 180)
+		(at 158.75 78.74 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3142,7 +3142,7 @@
 		)
 		(uuid "87da4adb-9a3f-40cc-bad3-4a140d849325")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 150.8663 66.04 0)
+			(at 150.8663 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3154,29 +3154,29 @@
 	)
 	(global_label "RED1"
 		(shape input)
-		(at 204.47 76.2 0)
+		(at 158.75 66.04 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "896287a9-d34e-48dd-ac7a-bfe481b16eb6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 212.3537 76.2 0)
+			(at 150.8663 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
 	)
 	(global_label "RED6"
 		(shape input)
-		(at 83.82 93.98 0)
+		(at 88.9 93.98 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3186,7 +3186,7 @@
 		)
 		(uuid "98bad4b4-dd97-458b-bcfb-43be272ad9df")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 91.7037 93.98 0)
+			(at 96.7837 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3198,7 +3198,7 @@
 	)
 	(global_label "RED3"
 		(shape input)
-		(at 44.45 139.7 0)
+		(at 49.53 139.7 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3208,7 +3208,7 @@
 		)
 		(uuid "9bc93bf5-1c4a-45af-b5bf-cb4b0e10515a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 52.3337 139.7 0)
+			(at 57.4137 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3220,29 +3220,29 @@
 	)
 	(global_label "RED0"
 		(shape input)
-		(at 204.47 78.74 0)
+		(at 158.75 63.5 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "a2b51204-5ae2-48c1-bd90-f5ef85f87035")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 212.3537 78.74 0)
+			(at 150.8663 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
 	)
 	(global_label "RED8"
 		(shape input)
-		(at 158.75 63.5 180)
+		(at 158.75 68.58 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3252,7 +3252,7 @@
 		)
 		(uuid "b40efef3-5b76-45f5-ad85-4994c6b2f437")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 150.8663 63.5 0)
+			(at 150.8663 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3286,7 +3286,7 @@
 	)
 	(global_label "RED8"
 		(shape input)
-		(at 83.82 139.7 0)
+		(at 88.9 139.7 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3296,7 +3296,7 @@
 		)
 		(uuid "c8c6e4cc-f3ad-41d8-bfdd-bc35215ab81b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 91.7037 139.7 0)
+			(at 96.7837 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3308,7 +3308,7 @@
 	)
 	(global_label "RED1"
 		(shape input)
-		(at 44.45 93.98 0)
+		(at 49.53 93.98 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3318,7 +3318,7 @@
 		)
 		(uuid "cc34c678-f74f-4f9f-809d-3baf0f14329b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 52.3337 93.98 0)
+			(at 57.4137 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3330,29 +3330,29 @@
 	)
 	(global_label "RED5"
 		(shape input)
-		(at 204.47 66.04 0)
+		(at 158.75 83.82 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "d73b9ecc-af6c-4b7e-a2b9-a86f30231063")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 212.3537 66.04 0)
+			(at 150.8663 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
 	)
 	(global_label "RED9"
 		(shape input)
-		(at 83.82 162.56 0)
+		(at 88.9 162.56 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3362,7 +3362,7 @@
 		)
 		(uuid "f653a50c-8471-4e66-a299-588e66526d5a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 91.7037 162.56 0)
+			(at 96.7837 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3521,6 +3521,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 86.36 93.98 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "23f893b1-0486-4505-ae2f-6780a2d2ab12")
+		(property "Reference" "R9"
+			(at 86.36 88.9 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "R_Small"
+			(at 86.36 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1812_4532Metric_Pad1.30x3.40mm_HandSolder"
+			(at 86.36 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 86.36 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 86.36 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6f68989f-ef7b-40a8-b92b-242e9c1de36c")
+		)
+		(pin "1"
+			(uuid "5c56d56c-2ffd-4f65-9b96-a4d49f232077")
+		)
+		(instances
+			(project "Lightboard-Gift-REMASTERED"
+				(path "/65e83e1e-f555-495c-ad98-74009b46e3d2"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:MountingHole")
 		(at 121.92 66.04 0)
 		(unit 1)
@@ -3579,6 +3647,74 @@
 			(project "Lightboard-Gift-REMASTERED"
 				(path "/65e83e1e-f555-495c-ad98-74009b46e3d2"
 					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 46.99 116.84 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2707e86f-472d-4ddd-b704-7604ece5f7ec")
+		(property "Reference" "R5"
+			(at 46.99 111.76 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "R_Small"
+			(at 46.99 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1812_4532Metric_Pad1.30x3.40mm_HandSolder"
+			(at 46.99 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 46.99 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 46.99 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d9519090-f57b-4653-858d-8df44efefbaf")
+		)
+		(pin "1"
+			(uuid "cce0fa2e-8a43-4cbf-bf3b-8175568e5614")
+		)
+		(instances
+			(project "Lightboard-Gift-REMASTERED"
+				(path "/65e83e1e-f555-495c-ad98-74009b46e3d2"
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -3718,6 +3854,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 46.99 162.56 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "31e93d17-b658-449d-a8c6-137fd7ed82c7")
+		(property "Reference" "R7"
+			(at 46.99 157.48 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "R_Small"
+			(at 46.99 160.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1812_4532Metric_Pad1.30x3.40mm_HandSolder"
+			(at 46.99 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 46.99 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 46.99 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "befbac0e-34ce-4b2e-bb83-355332472053")
+		)
+		(pin "1"
+			(uuid "420a66c4-6aa9-417f-aaa3-b9e8481381a8")
+		)
+		(instances
+			(project "Lightboard-Gift-REMASTERED"
+				(path "/65e83e1e-f555-495c-ad98-74009b46e3d2"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VBUS")
 		(at 58.42 25.4 0)
 		(unit 1)
@@ -3783,8 +3987,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 86.36 71.12 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "363f8fbc-3374-4cb2-ac5d-70eb215b0864")
+		(property "Reference" "R8"
+			(at 86.36 66.04 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "R_Small"
+			(at 86.36 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1812_4532Metric_Pad1.30x3.40mm_HandSolder"
+			(at 86.36 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 86.36 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 86.36 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "fd94c8e1-7c4c-4434-8fb6-6bfa63b639b7")
+		)
+		(pin "1"
+			(uuid "cfec3f1b-2e43-4371-a89a-c2707590f1df")
+		)
+		(instances
+			(project "Lightboard-Gift-REMASTERED"
+				(path "/65e83e1e-f555-495c-ad98-74009b46e3d2"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 139.7 99.06 270)
+		(at 223.52 78.74 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3793,7 +4065,7 @@
 		(fields_autoplaced yes)
 		(uuid "42df2bd5-c487-48bb-ac1e-a7e555a3201c")
 		(property "Reference" "#PWR06"
-			(at 133.35 99.06 0)
+			(at 229.87 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3802,7 +4074,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 135.89 99.0601 90)
+			(at 227.33 78.7399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3811,7 +4083,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 139.7 99.06 0)
+			(at 223.52 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3820,7 +4092,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 99.06 0)
+			(at 223.52 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3829,7 +4101,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 139.7 99.06 0)
+			(at 223.52 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4340,33 +4612,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 147.32 99.06 0)
+		(lib_id "Device:R_Small")
+		(at 46.99 71.12 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "730db66a-9743-4d6b-b3f8-5c3c35ffc400")
-		(property "Reference" "SW1"
-			(at 147.32 91.44 0)
+		(uuid "702cef28-8430-4b70-b311-84c4d4a40551")
+		(property "Reference" "R3"
+			(at 46.99 66.04 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "R_Small"
+			(at 46.99 68.58 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SW_Push"
-			(at 147.32 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H4.3mm"
-			(at 147.32 93.98 0)
+		(property "Footprint" "Resistor_SMD:R_1812_4532Metric_Pad1.30x3.40mm_HandSolder"
+			(at 46.99 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4375,7 +4647,75 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 147.32 93.98 0)
+			(at 46.99 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 46.99 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5b656800-5c4b-4071-8f0b-06b019976ebe")
+		)
+		(pin "1"
+			(uuid "d674de72-0fe5-4ed2-a1cc-391685e544c2")
+		)
+		(instances
+			(project ""
+				(path "/65e83e1e-f555-495c-ad98-74009b46e3d2"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 215.9 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "730db66a-9743-4d6b-b3f8-5c3c35ffc400")
+		(property "Reference" "SW1"
+			(at 215.9 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 215.9 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H4.3mm"
+			(at 215.9 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 215.9 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4384,7 +4724,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 147.32 99.06 0)
+			(at 215.9 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4469,6 +4809,74 @@
 			(project ""
 				(path "/65e83e1e-f555-495c-ad98-74009b46e3d2"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 46.99 93.98 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7cc539d1-a458-42a9-95e0-18c6ef2d8555")
+		(property "Reference" "R4"
+			(at 46.99 88.9 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "R_Small"
+			(at 46.99 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1812_4532Metric_Pad1.30x3.40mm_HandSolder"
+			(at 46.99 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 46.99 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 46.99 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "128c6b84-bc42-44bf-b1c4-f2dc58d2b370")
+		)
+		(pin "1"
+			(uuid "eebc3d7e-d213-4355-9f95-3c186e1f55b4")
+		)
+		(instances
+			(project "Lightboard-Gift-REMASTERED"
+				(path "/65e83e1e-f555-495c-ad98-74009b46e3d2"
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -4617,6 +5025,74 @@
 			(project "Lightboard-Gift-REMASTERED"
 				(path "/65e83e1e-f555-495c-ad98-74009b46e3d2"
 					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 86.36 139.7 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9e2bf4b2-afdf-4664-bc38-cd7db52e1f8e")
+		(property "Reference" "R11"
+			(at 86.36 134.62 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "R_Small"
+			(at 86.36 137.16 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1812_4532Metric_Pad1.30x3.40mm_HandSolder"
+			(at 86.36 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 86.36 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 86.36 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a09556cd-0ad0-4386-a6ea-6daca944528d")
+		)
+		(pin "1"
+			(uuid "33168c68-a62c-4d25-9517-dd02974936d9")
+		)
+		(instances
+			(project "Lightboard-Gift-REMASTERED"
+				(path "/65e83e1e-f555-495c-ad98-74009b46e3d2"
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -4875,6 +5351,73 @@
 			(project "Lightboard-Gift-REMASTERED"
 				(path "/65e83e1e-f555-495c-ad98-74009b46e3d2"
 					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 204.47 99.06 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "afdd410d-fa61-4785-bf8a-2e0400d52a27")
+		(property "Reference" "#PWR018"
+			(at 210.82 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 208.28 99.0599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 204.47 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 204.47 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 204.47 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a087daee-2f2e-4d2c-87a3-d5f8270e752f")
+		)
+		(instances
+			(project "Lightboard-Gift-REMASTERED"
+				(path "/65e83e1e-f555-495c-ad98-74009b46e3d2"
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -5156,6 +5699,140 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 181.61 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c83a7def-1f46-440f-bb1b-cbfa5b1cb8e5")
+		(property "Reference" "#PWR017"
+			(at 181.61 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 181.61 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 181.61 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 181.61 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 181.61 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cbd687b8-e324-459b-95e9-c11c2134f82f")
+		)
+		(instances
+			(project "Lightboard-Gift-REMASTERED"
+				(path "/65e83e1e-f555-495c-ad98-74009b46e3d2"
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 86.36 162.56 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cc6757ca-617a-49c3-a465-1fa6fe3c3458")
+		(property "Reference" "R12"
+			(at 86.36 157.48 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "R_Small"
+			(at 86.36 160.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1812_4532Metric_Pad1.30x3.40mm_HandSolder"
+			(at 86.36 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 86.36 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 86.36 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "46de3f8b-0c1b-4fe5-b069-3f8829568d8f")
+		)
+		(pin "1"
+			(uuid "98e9f769-cf32-4df4-baaa-e8da43c3d2c2")
+		)
+		(instances
+			(project "Lightboard-Gift-REMASTERED"
+				(path "/65e83e1e-f555-495c-ad98-74009b46e3d2"
+					(reference "R12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED_RKGB")
 		(at 39.37 167.64 0)
 		(unit 1)
@@ -5224,6 +5901,74 @@
 			(project "Lightboard-Gift-REMASTERED"
 				(path "/65e83e1e-f555-495c-ad98-74009b46e3d2"
 					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 86.36 116.84 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d45414af-1aa4-4cfb-acd2-3e07879028de")
+		(property "Reference" "R10"
+			(at 86.36 111.76 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "R_Small"
+			(at 86.36 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1812_4532Metric_Pad1.30x3.40mm_HandSolder"
+			(at 86.36 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 86.36 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 86.36 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "82719730-b608-4475-85ba-87275cdddbff")
+		)
+		(pin "1"
+			(uuid "32c2e7b4-d4b9-4b03-81b3-6466209fa05b")
+		)
+		(instances
+			(project "Lightboard-Gift-REMASTERED"
+				(path "/65e83e1e-f555-495c-ad98-74009b46e3d2"
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -5969,6 +6714,74 @@
 			(project "Lightboard-Gift-REMASTERED"
 				(path "/65e83e1e-f555-495c-ad98-74009b46e3d2"
 					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 46.99 139.7 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fefa2347-a22f-4a1e-9cd8-360e75cb01af")
+		(property "Reference" "R6"
+			(at 46.99 134.62 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "R_Small"
+			(at 46.99 137.16 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1812_4532Metric_Pad1.30x3.40mm_HandSolder"
+			(at 46.99 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 46.99 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 46.99 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b0fb1f17-cad5-43fd-8c33-4c302d296cc9")
+		)
+		(pin "1"
+			(uuid "197c32bc-a29d-4e97-ac04-f466852a112a")
+		)
+		(instances
+			(project "Lightboard-Gift-REMASTERED"
+				(path "/65e83e1e-f555-495c-ad98-74009b46e3d2"
+					(reference "R6")
 					(unit 1)
 				)
 			)
