@@ -144,13 +144,21 @@ class States:
             for i in range(len(leds)):
                 if not is_switch_on():
                     return
-                for led in leds:
+                
+                # Fade in the current LED
+                for brightness in range(0, 65536, 4096):
                     if not is_switch_on():
                         return
-                    led.duty_u16(0)
-
-                leds[i].duty_u16(65535)
-                time.sleep(0.1)
+                    leds[i].duty_u16(brightness)
+                    time.sleep(0.005)
+                
+                # Fade out the current LED
+                for brightness in range(65535, -1, -4096):
+                    if not is_switch_on():
+                        return
+                    leds[i].duty_u16(brightness)
+                    time.sleep(0.005)
+                
                 check_button()
                 if mode != 2:
                     return
