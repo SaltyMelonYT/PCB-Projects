@@ -12,4 +12,6 @@ Tailored towards couples for any occasion, wheather it be Valentines day, Christ
 
 ## Pictures!!!!
 
-![Alt text](/img/IMG_20251024_152812287_HDR.jpg "First Pic")
+![Alt text](/img/UnlitHeart.jpg "First Pic")
+![Alt text](/img/Back.jpg "Second Pic")
+![Alt text](/img/LitHeart.jpg "Third Pic")
