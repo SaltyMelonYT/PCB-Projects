@@ -9,3 +9,7 @@ Tailored towards couples for any occasion, wheather it be Valentines day, Christ
 * Printed Circuit Board (PCB) from KiCad files
 * Ten (10) 560 Ohm 2515 Resistors (220 ohm will work fine, I just chose 560 because it was dimmer without software changes)
 * Soldering Iron and solder
+
+## Pictures!!!!
+
+![Alt text](/img/IMG_20251024_152812287_HDR.jpg "First Pic")
