@@ -59,7 +59,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "Lightboard-Gift-REMASTERED.kicad_prl",
+    "filename": "hardware.kicad_prl",
     "version": 5
   },
   "net_inspector_panel": {
