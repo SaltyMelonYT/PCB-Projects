@@ -1,4 +1,5 @@
 from machine import Pin, PWM
+import random
 import time
 
 LED1 = 21
@@ -12,7 +13,6 @@ LED8 = 15
 LED9 = 14
 LED10 = 13
 
-SWITCH = 4
 BUTTON = 0
 
 led1 = PWM(Pin(LED1))
@@ -38,27 +38,10 @@ led9.freq(1000)
 led10.freq(1000)
 
 button = Pin(BUTTON, Pin.IN, Pin.PULL_UP)
-switch = Pin(SWITCH, Pin.IN, Pin.PULL_UP)
 
 mode = 0
 last_button_state = 1
 debounce_time = 0
-
-def is_switch_on():
-    if switch.value() == 0:
-        return True
-    else:
-        led1.duty_u16(0)
-        led2.duty_u16(0)
-        led3.duty_u16(0)
-        led4.duty_u16(0)
-        led5.duty_u16(0)
-        led6.duty_u16(0)
-        led7.duty_u16(0)
-        led8.duty_u16(0)
-        led9.duty_u16(0)
-        led10.duty_u16(0)
-        return False
 
 def check_button():
     global mode, last_button_state, debounce_time
@@ -67,9 +50,9 @@ def check_button():
     
     if current_state == 0 and last_button_state == 1:
         if time.ticks_diff(current_time, debounce_time) > 200:
-            mode = (mode+1)%3
+            mode = (mode+1)%5
             debounce_time = current_time
-            mode_names = ['Solid', 'Flashing', 'Chase']
+            mode_names = ['Solid', 'Flashing', 'Chase', 'Twinkle', 'Off']
             print(f"Mode: {mode_names[mode]}")
     
     last_button_state = current_state
@@ -77,8 +60,6 @@ def check_button():
 class States:
     @staticmethod
     def solid_mode():
-        if not is_switch_on():
-            return
         led1.duty_u16(65535)
         led2.duty_u16(65535)
         led3.duty_u16(65535)
@@ -93,11 +74,7 @@ class States:
 
     @staticmethod
     def flashing_mode():
-        if not is_switch_on():
-            return
         for duty in range(0, 65536, 512):
-            if not is_switch_on():
-                return
             led1.duty_u16(duty)
             led2.duty_u16(65535-duty)
             led3.duty_u16(duty)
@@ -109,14 +86,12 @@ class States:
             led9.duty_u16(duty)
             led10.duty_u16(65535-duty)
 
-            time.sleep(0.01)
+            time.sleep(0.005)
             check_button()
             if mode != 1:
                 return
         
         for duty in range(65535, -1, -512):
-            if not is_switch_on():
-                return
             led1.duty_u16(duty)
             led2.duty_u16(65535-duty)
             led3.duty_u16(duty)
@@ -128,7 +103,7 @@ class States:
             led9.duty_u16(duty)
             led10.duty_u16(65535-duty)
 
-            time.sleep(0.01)
+            time.sleep(0.005)
             check_button()
             if mode != 1:
                 return
@@ -137,31 +112,65 @@ class States:
     def chase_mode():
         leds = [led1, led2, led3, led4, led5, led6, led7, led8, led9, led10]
         
-        while True:
-            if not is_switch_on():
-                return
-                
+        while mode == 2:
             for i in range(len(leds)):
-                if not is_switch_on():
-                    return
-                
-                # Fade in the current LED
-                for brightness in range(0, 65536, 4096):
-                    if not is_switch_on():
-                        return
-                    leds[i].duty_u16(brightness)
-                    time.sleep(0.005)
-                
-                # Fade out the current LED
-                for brightness in range(65535, -1, -4096):
-                    if not is_switch_on():
-                        return
-                    leds[i].duty_u16(brightness)
-                    time.sleep(0.005)
-                
-                check_button()
                 if mode != 2:
                     return
+
+                for brightness in range(0, 65536, 1000):
+                    leds[i].duty_u16(brightness)
+                    time.sleep(0.003)
+                    check_button()
+                    if mode != 2:
+                        return
+
+                for brightness in range(65535, -1, -1000):
+                    leds[i].duty_u16(brightness)
+                    time.sleep(0.003)
+                    check_button()
+                    if mode != 2:
+                        return
+
+    @staticmethod
+    def off():
+        leds = [led1, led2, led3, led4, led5, led6, led7, led8, led9, led10]
+        for led in leds:
+            led.duty_u16(0)
+        time.sleep(0.05)
+        
+    @staticmethod
+    def twinkle():
+        leds = [led1, led2, led3, led4, led5, led6, led7, led8, led9, led10]
+        lastLED = []
+        
+        for led in leds:
+            led.duty_u16(500)
+
+        while mode == 3:
+            rand_led = random.choice(leds)
+            rand_brightness = random.randrange(10000, 60000)
+            
+            if rand_led in lastLED:
+                continue
+            else:
+                for brightness in range(0, rand_brightness, 500):
+                    rand_led.duty_u16(brightness)
+                    time.sleep(0.01)
+                    check_button()
+                    if mode != 3:
+                        return
+
+                for brightness in range(rand_brightness, 0, -500):
+                    rand_led.duty_u16(brightness)
+                    time.sleep(0.01)
+                    check_button()
+                    if mode != 3:
+                        return
+
+                lastLED.append(rand_led)
+
+                if len(lastLED) > 5:
+                    lastLED.pop(0)
 
 try:
     print("Starting - Mode: Solid")
@@ -172,30 +181,18 @@ try:
             States.solid_mode()
         elif mode == 1:
             States.flashing_mode()
-        else:
+        elif mode == 2:
             States.chase_mode()
+        elif mode == 3:
+            States.twinkle()
+        else:
+            States.off()
             
 except KeyboardInterrupt:
-    led1.duty_u16(0)
-    led2.duty_u16(0)
-    led3.duty_u16(0)
-    led4.duty_u16(0)
-    led5.duty_u16(0)
-    led6.duty_u16(0)
-    led7.duty_u16(0)
-    led8.duty_u16(0)
-    led9.duty_u16(0)
-    led10.duty_u16(0)
-
-    led1.deinit()
-    led2.deinit()
-    led3.deinit()
-    led4.deinit()
-    led5.deinit()
-    led6.deinit()
-    led7.deinit()
-    led8.deinit()
-    led9.deinit()
-    led10.deinit()
-
+    leds = [led1, led2, led3, led4, led5, led6, led7, led8, led9, led10]
+    for led in leds:
+        led.duty_u16(0)
+        led.deinit()
+    
     print("LED PWM stopped")
+
