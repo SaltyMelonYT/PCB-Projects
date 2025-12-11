@@ -5765,6 +5765,10 @@
 		(at 44.45 62.23)
 		(uuid "cbd0703c-a0a1-4b91-a919-77bde579d2f3")
 	)
+	(no_connect
+		(at 44.45 49.53)
+		(uuid "e1825d6d-0b17-424f-bbe1-8fa4233bd381")
+	)
 	(wire
 		(pts
 			(xy 223.52 132.08) (xy 224.79 132.08)
@@ -5824,16 +5828,6 @@
 			(type default)
 		)
 		(uuid "041f2b57-b8df-4153-bc51-634c53367c0a")
-	)
-	(wire
-		(pts
-			(xy 27.94 49.53) (xy 44.45 49.53)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "060fcaa4-bb4b-40bc-bf6d-64a0e02d91e7")
 	)
 	(wire
 		(pts
@@ -7834,16 +7828,6 @@
 			(justify left bottom)
 		)
 		(uuid "5034d102-9f21-42e3-8261-766247ddf91d")
-	)
-	(label "HDMI0_CEC"
-		(at 27.94 49.53 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "51f1f9e8-2509-47b0-9b8b-ad6ac3d6e9f7")
 	)
 	(label "C4"
 		(at 78.74 124.46 180)
